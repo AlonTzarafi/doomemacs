@@ -89,7 +89,7 @@ Change `$DOOMDIR' with the `--doomdir' option, e.g.
         (print! (warn "Not generating envvars file, as requested"))
       (if (file-exists-p doom-env-file)
           (print! (item "Envvar file already exists, skipping"))
-        (when (or yes? (y-or-n-p "Generate an envvar file? (see `doom help env` for details)"))
+        (when t
           (call! '(env)))))
 
     ;; Install Doom packages
